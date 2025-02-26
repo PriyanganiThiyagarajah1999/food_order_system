@@ -1,0 +1,44 @@
+:host{
+    margin-top: 0%;
+    display: block;
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    background-color: #cacacadc;
+}
+
+.row{
+    background-color: #ffffff;
+    margin: 60px 110px;
+    border-radius: 20px;
+}
+
+.summary{
+    background-color: #c7c7c7;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.table td{
+    padding: 0px 50px 0px 0px;
+}
+
+.table input[type="number"]{
+    width: 35px;
+    height: 20px;
+    border:1px solid black;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+   }
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.image{
+    border-radius: 20px;
+}

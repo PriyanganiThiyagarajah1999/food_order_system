@@ -1,0 +1,116 @@
+<div class="menu">
+    <app-nav-page></app-nav-page>
+    <h1>Taste the<br>Difference</h1>
+    <p>Your Ultimate Destination for Delectable Delights!</p>
+    <button class="button" type="submit" (click)="submit()">Taste Now</button>
+    <button class="nextArrow" (click)="nextImage()"><i class="fa-solid fa-chevron-right"></i></button>
+    <img [src]="image" alt="" width="100%">    
+</div>
+
+<div class="new">
+    <div class="row">
+        <div class="col text-center pt-5">
+            <h1>NEW PRODUCTS</h1>
+        </div>
+    </div>
+
+    <div class="row p-5  d-flex text-center" style="font-weight: bold; font-size: 20px;">
+        <div class="col-12 d-flex" id="col-content">
+            <div class="card m-2" *ngFor="let i of indexes">
+                <span class="tooltip1">
+                    <a class="item1"><img [src]="food_images[i]" alt="" class="img-fluid rounded"></a>
+                    <span class="tooltiptext pb-3">
+                        <div>
+                            <a class="item"><img [src]="food_images[i]" alt="" class="img-fluid rounded"></a>
+                            <p><b>{{food_names[i]}}</b></p>
+                            <span class="p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum finibus eros, id gravida ex consequat nec. 
+                                Suspendisse potenti.</span>
+                            <p><b>{{food_prices[i]}}</b></p>
+                            <button class="btn" (click)="service.addtoCart(i, food_names[i], food_images[i], food_prices[i])">Add to Cart</button>
+                        </div>
+                    </span>
+                </span>
+                
+                <div class="rating text-center">
+                    <p>{{food_names[i]}}</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <p>{{food_prices[i]}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about pt-5" id="about">
+    <h1>Why Food Corner?</h1>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <p>Our objective is to establish Food Corner as the go-to destination for premium-quality, hygienic, and delectable food 
+                offerings spanning Italian, Chinese, Indian, and traditional cuisines. We strive to achieve the same level of renown 
+                and association with culinary excellence as renowned culinary specialties have in their respective regions.</p>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row d-flex p-5">
+        <div class="col ps-5 pe-5">
+            <i class="fa-regular fa-lightbulb"></i>
+            <h4>Focus on Quality</h4>
+            <p>We pledge to deliver freshness, aroma, taste, and hygiene in every dish. Our goal: crafting superior, 
+                flavorful food for patrons worldwide.</p>
+        </div>
+        <div class="col ps-5 pe-5">
+            <i class="fa-regular fa-comments"></i>
+            <h4>Customer-Centricity</h4>
+            <p>Being a Customer-Centric Organization, catering to the needs of Customers. Ensuring we take feedback from every
+                 single Patron and incorporating their suggestions and improvements. </p>
+        </div>
+        <div class="col ps-5 pe-5">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h4>Timeliness</h4>
+            <p>Delivering Food Products Directly from Our Kitchens to the Doorsteps of Our Patrons in a timely fashion, 
+                in the most secure and hygienic packaging.</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="content" id="content">
+    <div class="row">
+        <div class="col text-center pt-5">
+            <h1>FEATURE PRODUCTS</h1>
+        </div>
+    </div>
+    
+    <div class="row p-5  d-flex text-center" style="font-weight: bold; font-size: 20px;">
+        <div class="col-lg-3 col-md-6" id="col-content">
+            <p>Traditional Food</p>
+            <a class="item"><img src="assets/7.jpg" alt="" class="img-fluid rounded"></a>
+            <button class="btn1 p-3" routerLink="/traditional">Explore More</button>
+        </div>
+        <div class="col-lg-3 col-md-6" id="col-content">
+            <p>Indian Food</p>
+            <a  class="item"><img class="img-fluid rounded" src="assets/6.jpg" alt=""></a>
+            <button class="btn1 p-3" routerLink="/indian">Explore More</button>
+        </div>
+        <div class="col-lg-3 col-md-6" id="col-content">
+            <p>Chinese Food</p>
+            <a  class="item"><img class="img-fluid rounded" src="assets/8.jpg" alt=""></a>
+            <button class="btn1 p-3" routerLink="/chinese" >Explore More</button>
+        </div>
+        <div class="col-lg-3 col-md-6" id="col-content">
+            <p>Italian Food</p>
+            <a class="item"><img class="img-fluid rounded" src="assets/9.jpg" alt=""></a>
+            <button class="btn1 p-3" routerLink="/italian">Explore More</button>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <app-footer></app-footer>
+</div>
+

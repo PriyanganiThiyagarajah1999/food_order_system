@@ -1,0 +1,35 @@
+.contain{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+.list-inline-item a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.list-inline-item a i{
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.list1{
+    background-color: rgb(23, 53, 113);
+    border: none;
+    color: #ffffff;
+}
+
+.list1:hover {
+    cursor: pointer;
+}
+
+.cart{
+    position: relative;
+    background: white;
+    color: black;
+    border-radius:100px;
+    border: 2px solid black;
+    width: 20px;
+    text-align: center;
+    top: -10px;
+    left: -10px;
+}

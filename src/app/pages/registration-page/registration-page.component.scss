@@ -1,0 +1,38 @@
+.contain {
+    background-image: url('/assets/bg-header.png');
+}
+#login{
+    border-top-right-radius: 48%;
+    border-bottom-right-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 680px;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+}
+#login h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+#login input{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    width: 380px;
+    height:35px;
+    padding-left: 20px;
+}
+.btn{
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    width: 100px;
+    font-size: 14px;
+    height: 35px;
+    color: #fff;
+}
+
+.btn p a{
+    color: #fff;
+}

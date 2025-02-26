@@ -1,0 +1,28 @@
+.contain{
+    background-color: black;
+}
+
+.contain i{
+    font-size: 20px;
+}
+
+h2, p, h5{
+    color:white;
+    font-weight: bold;
+}
+
+p{
+    padding-left: 100px;
+}
+
+.link{
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.map{
+  position: relative;
+  padding-left: 250px;
+  top: -60px;
+  transform: translate(-50%, -50%);
+}

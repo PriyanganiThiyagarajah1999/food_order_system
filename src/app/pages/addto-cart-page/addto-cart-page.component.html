@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-8">
+        <h3 class="m-5 mt-4"><b>Shopping Cart</b></h3>
+        <div class="hr m-5 mt-5">
+            <hr>
+        </div>
+        <div class="cart" *ngFor="let i of index">
+            <div class="contain">
+                <table class="table ms-5">
+                    <tr>
+                        <td><img [src]="cartData[i].item_image" alt="" width="80px" class="image"></td>
+                        <td><b>{{cartData[i].item_name}}</b></td>
+                        <td><b>{{cartData[i].item_price}}</b></td>
+                        <td><i class="fa-solid fa-minus" (click)="service.addtoCartDecrease(i)"></i><input type="number" name="number" class="text-center" min="1" [(ngModel)]="service.cart"><i class="fa-solid fa-plus" (click)="service.addtoCartIncrease(i)"></i></td>
+                        <td><i class="fa-solid fa-xmark" (click)="service.remove(i)"></i></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="summary col-4">
+        <h4 class="mt-5 ms-4"><b>Summary</b></h4>
+        <div class="hr m-4">
+            <hr>
+        </div>
+    </div>
+</div>

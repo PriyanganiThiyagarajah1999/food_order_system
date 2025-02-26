@@ -1,0 +1,66 @@
+<app-nav-page></app-nav-page>
+<div class="new">
+    <div class="row">
+        <div class="col text-center pt-5 mt-5">
+            <h1>CHINESE FOODS</h1>
+        </div>
+    </div>
+    
+    <div class="row p-5 text-center" style="font-weight: bold; font-size: 20px;">
+        <div class="col-lg-11 d-flex" id="col-content">
+            <div class="card m-2 col-2" *ngFor="let i of indexes.slice(0, 6)">
+                <span class="tooltip1">
+                    <a class="item1"><img [src]="food_images[i]" alt="" class="img-fluid rounded"></a>
+                    <span class="tooltiptext pb-2">
+                        <div>
+                            <a class="item"><img [src]="food_images[i]" alt="" class="img-fluid rounded"></a>
+                            <p><b>{{food_names[i]}}</b></p>
+                            <span class="p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum finibus eros, id gravida ex consequat nec. 
+                                Suspendisse potenti.</span>
+                            <p><b>{{food_prices[i]}}</b></p>
+                            <button class="btn" (click)="service.addtoCart(i, food_names[i], food_images[i], food_prices[i])">Add to Cart</button>
+                        </div>
+                    </span>
+                </span>
+                <div class="rating text-center">
+                    <p>{{food_names[i]}}</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <p>{{food_prices[i]}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row p-5 text-center" style="font-weight: bold; font-size: 20px;">
+        <div class="col-lg-11 d-flex" id="col-content">
+            <div class="card m-2 col-2" *ngFor="let i of indexes.slice(6)">
+                <span class="tooltip1">
+                    <a class="item1"><img [src]="food_images[i]" alt="" class="img-fluid rounded"></a>
+                    <span class="tooltiptext pb-2">
+                        <div>
+                            <a class="item"><img [src]="food_images[i]" alt="" class="img-fluid rounded"></a>
+                            <p><b>{{food_names[i]}}</b></p>
+                            <span class="p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum finibus eros, id gravida ex consequat nec. 
+                                Suspendisse potenti.</span>
+                            <p><b>{{food_prices[i]}}</b></p>
+                            <button class="btn" (click)="service.addtoCart(i,food_names[i], food_images[i], food_prices[i])">Add to Cart</button>
+                        </div>
+                    </span>
+                </span>
+                <div class="rating text-center">
+                    <p>{{food_names[i]}}</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <p>{{food_prices[i]}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

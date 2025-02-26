@@ -1,0 +1,35 @@
+.btn{
+    position: relative;
+    width: 80%;
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+.new .img-fluid{
+    height: 140px;
+    width: 350px;
+}
+.tooltip1 .tooltiptext {
+    visibility: hidden;
+    width: 320px;
+    border: 2px solid rgba(187, 181, 181, 0.605);
+    background-color: white;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    top: -15%;
+    left: -10%;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    display: block;
+    margin-left: 7px;
+    z-index: 1;
+}
+  
+.tooltip1:hover .tooltiptext {
+    visibility: visible;
+    z-index: 1;
+}

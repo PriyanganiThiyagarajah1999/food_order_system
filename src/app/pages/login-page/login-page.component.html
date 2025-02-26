@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="contain">
+    <div class="row">
+        <div class="col-5" id="login">
+            <h1>Hi there,</h1>
+            <h3>Welcome to our<br> Online Food Corner </h3><br>
+            <form name="loginform" [formGroup]="loginForm" (ngSubmit)="login()">
+                <input type="text" name="username" formControlName="userName" [(ngModel)]="userName" placeholder="username"><br><br>
+                <input type="password" name="password" formControlName="password" [(ngModel)]="password" placeholder="password">
+                <span *ngIf="validationError" [style]="'color:white'">Invalid Username or Password</span>
+            </form>
+            <div class="button mt-5 d-flex">
+                <button class="btn me-2" (click)="login()" [disabled]="!loginForm.valid">Login</button> <p class="click pt-1"> or <a routerLink="/Register" style="color: white; text-decoration: none;"> Click here to <span style="text-decoration: underline;">Register</span></a></p>
+            </div>
+        </div>
+    </div>
+</div>
